@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Unit5B_Diorama.ma
-//Last modified: Fri, Oct 02, 2026 08:08:28 PM
+//Last modified: Fri, Oct 02, 2026 08:16:56 PM
 //Codeset: 1252
 file -rdi 1 -ns "Tv" -rfn "TvRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Tv.ma";
 file -rdi 1 -ns "portrait" -rfn "portraitRN" -op "v=0;" -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/portrait.ma";
@@ -33,23 +33,21 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202607171511-52c21617ee";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "ED7F272F-47F8-74E4-9B43-E8A1F5F05011";
+fileInfo "UUID" "EB564B0C-465F-3376-21A9-B5AA2E10876C";
 createNode transform -s -n "persp";
 	rename -uid "35B40CB2-4156-7BD6-D539-CF8BB6A7B86F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -35.834476719693058 20.707556190704196 34.866040012680244 ;
-	setAttr ".r" -type "double3" -19.064389683052571 -406.19999999896493 0 ;
-	setAttr ".rp" -type "double3" 1.7763568394002505e-15 0 -1.5543122344752192e-15 ;
-	setAttr ".rpt" -type "double3" 4.6180742654005802e-16 -1.0756016466063021e-15 1.9126220878799871e-15 ;
+	setAttr ".t" -type "double3" -0.51049340990268721 6.7746776342391977 43.473984081994104 ;
+	setAttr ".rpt" -type "double3" 2.6889980063786536e-16 -1.0211375205190081e-15 -1.9926080739793321e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "68ACDF26-4882-DE75-A567-6BBDFCA0B540";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 51.927804755411856;
+	setAttr ".coi" 43.473984572294256;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0 -0.25611719489097595 -9.5367431640625e-07 ;
+	setAttr ".tp" -type "double3" -0.51049340990268699 6.7746776342391968 -4.9030015247808478e-07 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "EEC79D00-4FA5-6D5A-75C0-9BBF6FE3E122";
@@ -2591,7 +2589,7 @@ createNode mesh -n "Book2Shape" -p "Book2";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode fosterParent -n "Coffee_TableRNfosterParent1";
-	rename -uid "64580504-4EED-6FE1-7A1B-7F816EBF06C5";
+	rename -uid "923BE718-4702-59B3-F896-F8A06EAC8F1C";
 createNode mesh -n "Coffee_Table:polySurfaceShape2" -p "Coffee_TableRNfosterParent1";
 	rename -uid "FCABBD1A-4428-A859-4D9B-4E84AB1726BA";
 	setAttr -k off ".v";
